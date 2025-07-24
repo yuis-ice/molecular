@@ -9,7 +9,7 @@ An interactive web application for visualizing and animating molecular structure
 
 ## 📸 Preview
 
-![Molecular Structure Animation](app_screenshot.png)
+![Molecular Structure Animation](public/app_screenshot.png)
 
 *Interactive visualization of Rutin (C27H30O16) with animation controls and molecular information display*
 

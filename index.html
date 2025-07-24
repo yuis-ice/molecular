@@ -2,12 +2,157 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- Basic SEO Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Molecular Structure Screensaver</title>
+    <title>Molecular Structure Animation - Interactive Chemistry Visualization</title>
+    <meta name="description" content="Interactive web application for visualizing and animating molecular structures. Perfect for chemistry education, research, and learning molecular geometry. Built with React and TypeScript." />
+    <meta name="keywords" content="molecular structure, chemistry, animation, visualization, education, science, molecules, chemical bonds, interactive, React, TypeScript" />
+    <meta name="author" content="yuis-ice" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Molecular Structure Animation" />
+    <meta property="og:title" content="Molecular Structure Animation - Interactive Chemistry Visualization" />
+    <meta property="og:description" content="Interactive web application for visualizing and animating molecular structures. Perfect for chemistry education, research, and learning molecular geometry." />
+    <meta property="og:url" content="http://molecular.pages.dev/" />
+    <meta property="og:image" content="http://molecular.pages.dev/app_screenshot.png" />
+    <meta property="og:image:alt" content="Screenshot of molecular structure animation showing Rutin molecule with interactive controls" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yuis_ice" />
+    <meta name="twitter:creator" content="@yuis_ice" />
+    <meta name="twitter:title" content="Molecular Structure Animation - Interactive Chemistry Visualization" />
+    <meta name="twitter:description" content="Interactive web application for visualizing and animating molecular structures. Perfect for chemistry education and research." />
+    <meta name="twitter:image" content="http://molecular.pages.dev/app_screenshot.png" />
+    <meta name="twitter:image:alt" content="Screenshot of molecular structure animation showing Rutin molecule" />
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3b82f6" />
+    <meta name="msapplication-TileColor" content="#1e293b" />
+    <meta name="theme-color" content="#3b82f6" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="application-name" content="MolecularViz" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="MolecularViz" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#1e293b" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Molecular Structure Animation",
+      "alternateName": "MolecularViz",
+      "description": "Interactive web application for visualizing and animating molecular structures, designed for chemistry education, research, and learning molecular geometry.",
+      "url": "http://molecular.pages.dev/",
+      "image": "http://molecular.pages.dev/app_screenshot.png",
+      "screenshot": "http://molecular.pages.dev/app_screenshot.png",
+      "author": {
+        "@type": "Person",
+        "name": "yuis-ice",
+        "url": "https://github.com/yuis-ice"
+      },
+      "creator": {
+        "@type": "Person",
+        "name": "yuis-ice",
+        "url": "https://github.com/yuis-ice"
+      },
+      "applicationCategory": "EducationalApplication",
+      "applicationSubCategory": "Chemistry Education",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript. Works with Chrome, Firefox, Safari, Edge.",
+      "softwareVersion": "1.0.0",
+      "dateCreated": "2024-07-24",
+      "dateModified": "2024-07-24",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "license": "https://opensource.org/licenses/MIT",
+      "keywords": "molecular structure, chemistry, animation, visualization, education, science, molecules, chemical bonds, interactive",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": ["Students", "Educators", "Researchers", "Chemistry Enthusiasts"]
+      },
+      "educationalUse": "instruction",
+      "educationalRole": "student",
+      "learningResourceType": "interactive media",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Interactive molecular visualization",
+        "Real-time animation controls",
+        "Multiple molecular structures",
+        "Educational screensaver mode",
+        "Responsive design",
+        "Scientific accuracy"
+      ],
+      "screenshot": {
+        "@type": "ImageObject",
+        "url": "http://molecular.pages.dev/app_screenshot.png",
+        "caption": "Interactive visualization of Rutin molecule with animation controls"
+      }
+    }
+    </script>
+    
+    <!-- Performance and Preloading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    
+    <!-- Additional Meta for Better Indexing -->
+    <meta name="subject" content="Chemistry Education and Molecular Visualization" />
+    <meta name="rating" content="General" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="target" content="all" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration for PWA -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('SW registered: ', registration);
+            })
+            .catch(function(registrationError) {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
   </body>
 </html>

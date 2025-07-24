@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 GitHub Discussions
+    url: https://github.com/yuis-ice/molecular-structure-animation/discussions
+    about: Ask questions, share ideas, or discuss the project with the community
+  - name: 🌐 Live Demo
+    url: http://molecular.pages.dev/
+    about: Try out the molecular structure animation in your browser
+  - name: 📚 Documentation
+    url: https://github.com/yuis-ice/molecular-structure-animation#readme
+    about: Read the documentation and setup guide
+  - name: 🤝 Contributing Guide
+    url: https://github.com/yuis-ice/molecular-structure-animation/blob/main/CONTRIBUTING.md
+    about: Learn how to contribute to the project
